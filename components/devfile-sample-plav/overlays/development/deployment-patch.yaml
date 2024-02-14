@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-plav
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0032-tenant/tkwch-fix-0075-0032-app/devfile-sample-plav@sha256:48d7f2168565d96f7fa4a1e8ad62ec93bfb31df5c17860eac9a12ed62ea530fe
+        name: my-nodejs
+        resources: {}
+status: {}
